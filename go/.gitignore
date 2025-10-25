@@ -1,0 +1,6 @@
+*
+!.gitignore
+!Makefile
+!debian/
+!debian/*
+!debian/*/*

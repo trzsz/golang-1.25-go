@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+export GOCACHE := /tmp/.cache/go-build
+export GOROOT := $(CURDIR)
+export GOROOT_FINAL := /usr/lib/go-1.25
+export GOROOT_BOOTSTRAP := /usr/lib/go-1.23
+export PATH := /usr/lib/go-1.23/bin:$(PATH)
+
+%:
+	mkdir -p $(GOCACHE) && dh $@
+
+override_dh_strip:
+	dh_strip -Xtestdata -Xpkg
+
+override_dh_shlibdeps:
+	dh_shlibdeps -Xtestdata -Xtest
