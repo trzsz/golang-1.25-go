@@ -1,3 +1,9 @@
+golang-1.25-go (1.25.6) trusty; urgency=medium
+
+  * go 1.25.6
+
+ -- Lonny Wong <lonnywong@qq.com>  Sat, 17 Jan 2026 16:02:11 +0800
+
 golang-1.25-go (1.25.3) trusty; urgency=medium
 
   * go 1.25.3
